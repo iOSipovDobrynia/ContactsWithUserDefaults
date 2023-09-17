@@ -17,10 +17,9 @@ final class NewContactViewController: UIViewController {
     // MARK: - Public properties
     var delegate: NewContactViewControllerDelegate!
     
-    // MARK: - View's life cicle
+    // MARK: - View's life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        saveButton.isEnabled = false
         nameTF.addTarget(
             self,
             action: #selector(nameTFdidChanged),

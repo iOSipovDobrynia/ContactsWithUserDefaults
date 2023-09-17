@@ -16,6 +16,7 @@ final class ContactListController: UITableViewController {
     // MARK: - Private properties
     private var contacts: [Contact] = []
     
+    // MARK: - View's life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         contacts = StorageManager.shared.fetchContacts()

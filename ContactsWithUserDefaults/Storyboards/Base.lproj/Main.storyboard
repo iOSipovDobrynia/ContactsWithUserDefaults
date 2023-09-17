@@ -43,7 +43,7 @@
             </objects>
             <point key="canvasLocation" x="413" y="-56"/>
         </scene>
-        <!--New Contact View Controller-->
+        <!--New Contact-->
         <scene sceneID="ACF-av-SXc">
             <objects>
                 <viewController id="2Tq-L1-j3p" customClass="NewContactViewController" customModule="ContactsWithUserDefaults" customModuleProvider="target" sceneMemberID="viewController">
@@ -75,13 +75,13 @@
                             <constraint firstItem="A1P-bU-LEZ" firstAttribute="trailing" secondItem="sfq-Oo-jrj" secondAttribute="trailing" constant="16" id="qfB-V5-zaX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="I4T-h2-cTI">
+                    <navigationItem key="navigationItem" title="New Contact" id="I4T-h2-cTI">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ZZe-YO-K6x">
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="2Tq-L1-j3p" id="sis-dj-qyw"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="eOR-Sg-KP4">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="save" id="eOR-Sg-KP4">
                             <connections>
                                 <action selector="saveButtonPressed:" destination="2Tq-L1-j3p" id="rMx-oG-rft"/>
                             </connections>

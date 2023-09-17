@@ -16,7 +16,7 @@ final class StorageManager {
     private let defaults = UserDefaults.standard
     private let contactKey = "contacts"
     
-    // MARK: - Initializer
+    // MARK: - Initialization
     private init () {}
     
     // MARK: - Public func
