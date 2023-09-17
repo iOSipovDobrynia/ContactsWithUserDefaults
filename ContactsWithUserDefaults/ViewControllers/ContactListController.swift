@@ -18,6 +18,7 @@ final class ContactListController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        contacts = StorageManager.shared.fetchContacts()
     }
 
     // MARK: - Table view data source
@@ -41,6 +42,7 @@ final class ContactListController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             contacts.remove(at: indexPath.row)
+            StorageManager.shared.deleteContact(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }

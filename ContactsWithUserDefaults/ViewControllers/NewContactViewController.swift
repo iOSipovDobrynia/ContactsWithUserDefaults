@@ -50,6 +50,8 @@ final class NewContactViewController: UIViewController {
             lastname: lastnameTF.text ?? ""
         )
         
+        StorageManager.shared.save(contact: newContact)
+        
         delegate.add(contact: newContact)
     }
 }

@@ -15,6 +15,7 @@
 		E33D7BE32AB7641F009DC485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33D7BE12AB7641F009DC485 /* LaunchScreen.storyboard */; };
 		E33D7BEF2AB765D1009DC485 /* ContactListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33D7BEE2AB765D1009DC485 /* ContactListController.swift */; };
 		E33D7BF22AB766EB009DC485 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33D7BF12AB766EB009DC485 /* Contact.swift */; };
+		E33D7BF52AB77ED9009DC485 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33D7BF42AB77ED9009DC485 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E33D7BE42AB7641F009DC485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E33D7BEE2AB765D1009DC485 /* ContactListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListController.swift; sourceTree = "<group>"; };
 		E33D7BF12AB766EB009DC485 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		E33D7BF42AB77ED9009DC485 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		E33D7BD52AB7641D009DC485 /* ContactsWithUserDefaults */ = {
 			isa = PBXGroup;
 			children = (
+				E33D7BF32AB77EBC009DC485 /* Services */,
 				E33D7BF02AB766DB009DC485 /* Model */,
 				E33D7BEB2AB7643D009DC485 /* App */,
 				E33D7BEC2AB76442009DC485 /* ViewControllers */,
@@ -111,6 +114,14 @@
 				E33D7BF12AB766EB009DC485 /* Contact.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E33D7BF32AB77EBC009DC485 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E33D7BF42AB77ED9009DC485 /* StorageManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +198,7 @@
 				E33D7BDB2AB7641D009DC485 /* NewContactViewController.swift in Sources */,
 				E33D7BD72AB7641D009DC485 /* AppDelegate.swift in Sources */,
 				E33D7BF22AB766EB009DC485 /* Contact.swift in Sources */,
+				E33D7BF52AB77ED9009DC485 /* StorageManager.swift in Sources */,
 				E33D7BEF2AB765D1009DC485 /* ContactListController.swift in Sources */,
 				E33D7BD92AB7641D009DC485 /* SceneDelegate.swift in Sources */,
 			);
