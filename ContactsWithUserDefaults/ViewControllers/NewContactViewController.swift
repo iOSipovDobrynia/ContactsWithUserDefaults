@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NewContactViewController: UIViewController {
+final class NewContactViewController: UIViewController {
 
     // MARK: - IBOutlets
     @IBOutlet var nameTF: UITextField!
@@ -17,6 +17,7 @@ class NewContactViewController: UIViewController {
     // MARK: - Public properties
     var delegate: NewContactViewControllerDelegate!
     
+    // MARK: - View's life cicle
     override func viewDidLoad() {
         super.viewDidLoad()
         saveButton.isEnabled = false

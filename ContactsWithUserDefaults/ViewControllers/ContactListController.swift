@@ -11,7 +11,7 @@ protocol NewContactViewControllerDelegate {
     func add(contact: Contact)
 }
 
-class ContactListController: UITableViewController {
+final class ContactListController: UITableViewController {
 
     // MARK: - Private properties
     private var contacts: [Contact] = []
