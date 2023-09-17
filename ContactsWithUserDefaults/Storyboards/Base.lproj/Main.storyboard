@@ -11,7 +11,7 @@
         <!--Contacts-->
         <scene sceneID="IBv-nc-Asc">
             <objects>
-                <tableViewController id="uVb-pc-Jvr" sceneMemberID="viewController">
+                <tableViewController id="uVb-pc-Jvr" customClass="ContactListController" customModule="ContactsWithUserDefaults" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="tBj-UE-aGC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,6 +90,7 @@
                     <connections>
                         <outlet property="lastnameTF" destination="HU3-kz-L1c" id="n8z-nA-Rz1"/>
                         <outlet property="nameTF" destination="k7C-ec-3XE" id="AzA-Z2-TaX"/>
+                        <outlet property="saveButton" destination="eOR-Sg-KP4" id="T6Q-Zw-2bp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r4Q-Wd-XXM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -115,6 +116,7 @@
         <!--Navigation Controller-->
         <scene sceneID="rgd-hv-V4x">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7R-yz-cPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KHt-o5-2Gw" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jp9-fH-o1r">
@@ -126,7 +128,6 @@
                         <segue destination="2Tq-L1-j3p" kind="relationship" relationship="rootViewController" id="1Q2-eS-Br1"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="J7R-yz-cPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1452.6717557251907" y="-56.338028169014088"/>
         </scene>
